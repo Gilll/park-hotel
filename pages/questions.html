@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Популярные вопросы</title>
+    <link  rel="stylesheet" href="../styles/QuestionsStyle.css"/>
+</head>
+<body class="page page-contacts">
+    <img src="../image/bg_texture.webp" alt="" class="page__texture" aria-hidden="true"> 
+
+    <section class="hero hero--contacts">
+        <div class="hero__inner">
+        <img class="hero__frame-mobile" src="../image/frame-mobile.png" alt="" aria-hidden="true">         
+        <img class="hero__bg-mobile" src="../image/questions/hero__media-bg-mobile.png" alt="" aria-hidden="true">         
+        <img class="hero__frame" src="../image/hero-frame.png" alt="" aria-hidden="true"> 
+        <img class="hero__frame" src="../image/hero-frame.png" alt="" aria-hidden="true"> 
+        <img class="hero__bg" src="../image/questions/hero__media-bg.png" alt="" aria-hidden="true"> 
+        <img class="hero__lines" src="../image/hero-lines.png" alt="" aria-hidden="true"> 
+        </div>
+        <div class="hero__content">
+        <header class="container site-header">
+
+            <div class="site-header__mobile" aria-label="Мобильная навигация">
+                <button class="site-header__mobile-btn" type="button" aria-label="Открыть календарь">
+                <img class="site-header__mobile-btn1" src="../icons/Calendar.svg" alt="" aria-hidden="true">
+                </button>
+
+                <a href="#" class="site-header__mobile-logo" aria-label="На главную">
+                <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-header__mobile-logo-img">
+                </a>
+
+                <button class="site-header__mobile-btn" type="button" aria-label="Открыть меню" data-burger-open>
+                <img class="site-header__mobile-btn2" src="../icons/Burger-menu.svg" alt="" aria-hidden="true">
+                </button>
+            </div>
+
+            <div class="mobile-menu" hidden data-burger>
+                <div class="mobile-menu__backdrop" data-burger-close></div>
+
+                <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Меню">
+                    <div class="mobile-menu__top">
+                    <button class="mobile-menu__icon" type="button" aria-label="Календарь">
+                        <img class="mobile-menu__icon1" src="../icons/Calendar.svg" alt="" aria-hidden="true">
+                    </button>
+
+                    <a class="mobile-menu__logo" href="/" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск">
+                    </a>
+
+                    <button class="mobile-menu__icon" type="button" aria-label="Закрыть меню" data-burger-close>
+                        <img class="mobile-menu__icon2"src="../icons/Subtract-mobile.svg" alt="" aria-hidden="true">
+                    </button>
+                    </div>
+
+                    <nav class="mobile-menu__nav" aria-label="Навигация">
+                    <a class="mobile-menu__link mobile-menu__link1" href="#">Номера и цены</a>
+                    <a class="mobile-menu__link mobile-menu__link2" href="#">Услуги</a>
+
+                    <div class="mobile-menu__group">
+                        <a class="mobile-menu__sublink" href="#">Проживание</a>
+                        <a class="mobile-menu__sublink" href="#">Туры и экспедиции</a>
+                        <a class="mobile-menu__sublink" href="#">Отдых и досуг</a>
+                        <a class="mobile-menu__sublink" href="#">Автокемпинг</a>
+                    </div>
+
+                    <a class="mobile-menu__link mobile-menu__link3" href="#">Бар зимовка</a>
+                    <a class="mobile-menu__link mobile-menu__link4" href="#">Банкетный зал</a>
+                    <a class="mobile-menu__link mobile-menu__link5" href="#">О нас</a>
+                    <a class="mobile-menu__link mobile-menu__link6" href="#">Контакты</a>
+                    <a class="mobile-menu__link mobile-menu__link7" href="#">Первопроходцы севера</a>
+                    <a class="mobile-menu__link mobile-menu__link8" href="#">Спецпредложение</a>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="site-header__top">
+                <div class="site-header__top-inner">
+                    <div class="site-header__top--item site-header__top-left">
+                        <div class="site-header__top-phone">
+                            <a href="#" class="top-social" aria-label="Написать в WhatsApp" target="_blank" rel="noopener noreferrer">
+                                <img src="../icons/WhatsApp.svg" alt="" aria-hidden="true" class="top-icon">
+                            </a>
+                            <a href="#" class="top-social" aria-label="Написать в Telegram" target="_blank" rel="noopener noreferrer">
+                                <img src="../icons/Telegram.svg" alt="" aria-hidden="true" class="top-icon">
+                            </a>
+                            <a href="tel:+79646805090" class="top-social" aria-label="Позвонить: +7 964 680 50-90">
+                                <span class="top-phone">+7 964 680 50-90</span>
+                            </a>
+                        </div>
+                    
+                        <div class="site-header__top-email">
+                            <a href="mailto:booking@expedition-hotel.com" class="top-email-link" aria-label="Написать на почту booking@expedition-hotel.com">
+                                <span class="top-phone">booking@expedition-hotel.com</span>
+                            </a>
+
+                            
+                        </div>
+                    </div>
+                    <div class="site-header__top-center"> 
+                        <a 
+                            href="#" 
+                            class="site-header__top-center-location"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img class="top-icon" src="../icons/Location.svg" alt="" aria-hidden="true">
+                            <span class="site-header__top-center-text">г. Мурманск, Ледокольный проезд, 6</span>
+                        </a>
+                    </div>
+                    <div class="site-header__top-right">
+                        <div class="site-header__top-language">
+                            <a href="#" class="site-header__top-ru">RU</a>
+                            <a href="#" class="site-header__top-en">EN</a>
+                        </div>
+                        <a href="#" class="site-header__top-book">
+                            <span class="site-header__top-right-text">забронировать номер</span>
+                            <img src="../icons/Arrow.svg" alt="" aria-hidden="true" class="top-icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="site-header__nav">
+                <nav class="site-header__menu" aria-label="Main menu">
+                    <ul class="site-header__menu-list site-header__menu-list--left">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">номера и цены</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">банкетный зал</a>
+                        </li>
+                    </ul> 
+
+                    <ul class="site-header__menu-list site-header__menu-list--center1">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">услуги</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">бар зимовка</a>
+                        </li>
+                    </ul> 
+
+                    <a href="#" class="site-header__logo" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-header__logo-img">
+                    </a>
+
+                    <ul class="site-header__menu-list site-header__menu-list--center2">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">о нас</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">контакты</a>
+                        </li>
+                    </ul> 
+
+                    <ul class="site-header__menu-list site-header__menu-list--right">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">первопроходцы севера</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">спецпредложение</a>
+                        </li>
+                    </ul> 
+                    
+
+                </nav>
+            </div>
+        </header>
+       
+        <div class="hero__wrap">
+            <section class="faq-hero" aria-label="Популярные вопросы">
+                
+                <div class="faq-hero__content container">
+
+                    <div class="faq-hero__top">
+                        
+                        <div class="faq-hero__note">
+                               Перед тем как отправиться в путь, важно быть уверенным во всём — от маршрута до мелочей в багаже. Мы собрали самые популярные вопросы гостей парк-отеля «Экспедиция» и подготовили подробные ответы, чтобы ваше путешествие началось без лишних забот. 
+                        </div>
+                    </div>
+
+                    <div class="faq-hero__title-wrap">
+                        <div class="faq-hero__title">популярные</div>
+                        <div class="faq-hero__title faq-hero__title--offset">вопросы</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <main class="faq-main">
+
+            <section class="faq-section" aria-label="Часто задаваемые вопросы">
+                <div class="faq-section__heading">
+                    <div class="faq-section__title-wrap">
+                        <div class="faq-section__title">часто</div>
+                        <div class="faq-section__title">задаваемые 
+                            <span class="faq-section__title-accent">вопросы</span></div>
+                    </div>
+                </div>
+
+                <div class="faq-section__content">
+                    <div class="faq-section__left">
+                        <div class="faq-section__text">
+                            Мы собрали ответы на самые популярные вопросы, чтобы вы могли заранее узнать обо всех деталях проживания, услуг и организации отдыха в парк-отеле «Экспедиция».
+                        </div>
+
+                        <div class="faq-section__badge">
+                            <img class="faq-section__badge-img" src="../image/questions/compass.png" alt="" aria-hidden="true">
+                        </div>
+                    </div>
+
+                    <div class="faq-section__right">
+                        <div class="faq-item faq-item--opened">
+                            <button class="faq-item__button" type="button" aria-expanded="true">
+                                <span class="faq-item__question">как добраться до парк-отеля «экспедиция»?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq-item__answer">
+                                отель расположен в нескольких километрах от Мурманска. До нас можно
+                                добраться на автомобиле, такси или воспользоваться трансфером, который
+                                предоставляется по предварительной заявке.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-item__button" type="button" aria-expanded="false">
+                                <span class="faq-item__question">есть ли парковка на территории?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq-item__answer">
+                                на территории отеля предусмотрена парковка для гостей.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-item__button" type="button" aria-expanded="false">
+                                <span class="faq-item__question">можно ли проживать с животными?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq-item__answer">
+                                возможность размещения с животными лучше уточнять заранее у администрации.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-item__button" type="button" aria-expanded="false">
+                                <span class="faq-item__question">есть ли питание на территории отеля?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq-item__answer">
+                                да, питание доступно. Формат и условия зависят от тарифа и сезона.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-item__button" type="button" aria-expanded="false">
+                                <span class="faq-item__question">можно ли арендовать снаряжение для активного отдыха?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq-item__answer">
+                                да, часть снаряжения доступна для аренды. Уточняйте актуальный список при бронировании.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-item__button" type="button" aria-expanded="false">
+                                <span class="faq-item__question">какие услуги включены в проживание?</span>
+                                <span class="faq-item__icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="faq-item__answer">
+                                набор услуг зависит от категории номера и условий тарифа.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+     
+    <footer class="site-footer">
+            <div class="site-footer-mobile">
+                    <a href="#" class="site-footer__top-logo" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-footer-img">
+                    </a>
+
+                    <div class="site-footer-mobile-social">
+                            <a 
+                            href="#" 
+                            class="site-footer-mobile-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в WhatsApp"
+                            >
+                            <img class="site-footer-mobile-icon-img" src="../icons/WhatsApp2.svg" alt="">
+                            </a>
+
+                            <a 
+                            href="#" 
+                            class="site-footer-mobile-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Вконтакте"
+                            >
+                            <img class="site-footer-mobile-icon-img site-footer-mobile-icon-img--vk" src="../icons/VK.svg" alt="">
+                            </a>
+
+                             <a 
+                            href="#" 
+                            class="site-footer-mobile-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Telegram"
+                            >
+                            <img class="site-footer-mobile-icon-img" src="../icons/Telegram2.svg" alt="">
+                            </a>
+                    </div>
+
+                    <ul class="site-footer__top-list site-footer-mobile-list1">
+                            <li class="site-footer__top-link">г. Мурманск, Ледокольный проезд, 6</li>
+                            <li class="site-footer__top-link">+7 964 680 50-90</li>
+                            <li class="site-footer__top-link">+7 (815) 256-67-20</li>
+                            <li class="site-footer__top-link">booking@expedition-hotel.com</li> 
+                    </ul>
+
+                    <nav class="site-footer-mobile-nav">
+                            <ul class="site-footer__top-list site-footer__top-list2">
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Номера</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Услуги</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Бар зимовка</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Туры и экскурсии</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Спецпредложение</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Банкетный зал</a></li>
+                            </ul>
+
+                            <ul class="site-footer__top-list site-footer__top-list3">
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Первопроходцы</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Маршруты</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Фотогалерея</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">О нас</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Контакты</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">FAQ</a></li>
+                            </ul>
+                    </nav>
+                    
+                    
+                    <div class="site-footer-mobile-map">
+                            <img class="site-footer__map" src="../image//footer-mobile-map.png" alt="Местоположение отеля на карте">
+                    </div>
+
+                    <div class="site-footer__middle-left-questions site-footer-mobile-questions">
+                            <p class="site-footer__middle-left-title site-footer-mobile-title">Остались вопросы?</p>
+                            <p class="site-footer__middle-left-text site-footer-mobile-text">Оставьте свои данные<br>и мы свяжемся с вами</p>
+                    </div>
+
+                    <div class="site-footer-mobile-request">
+                        <section class="feedback-mobile" aria-label="Форма обратной связи">
+                            <form class="feedback-mobile__form" action="#" method="post">
+                            <div class="feedback-mobile__field">
+                                <input
+                                class="feedback-mobile__input"
+                                id="feedback-name-mobile"
+                                name="name"
+                                type="text"
+                                placeholder="Ваше имя"
+                                autocomplete="name"
+                                >
+                            </div>
+
+                            <div class="feedback-mobile__field">
+                                <input
+                                class="feedback-mobile__input"
+                                id="feedback-phone-mobile"
+                                name="phone"
+                                type="tel"
+                                placeholder="Телефон"
+                                autocomplete="tel"
+                                >
+                            </div>
+
+                            <p class="feedback-mobile__policy">
+                                Нажимая кнопку "Отправить", вы соглашаетесь с Политикой конфиденциальности
+                            </p>
+
+                            <button class="feedback-mobile__button" type="submit">
+                                <span class="feedback-mobile__button-text">Отправить</span>
+                                <img
+                                src="../icons/main/main-switch-btn-right.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="feedback-mobile__button-arrow"
+                                >
+                            </button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div class="site-footer__down">
+                        <div class="site-footer__down-left">
+                            <p>© 2025, «экспедиция»</p>
+                        </div>
+                        <div class="site-footer__down-center">
+                            <p><a href="#" class="site-footer__down-link">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="site-footer__down-right">
+                            <p><a href="#" class="site-footer__down-link">Request design</a></p>
+                        </div>
+
+                                   
+                              
+                </div>
+                </div>
+            </div>
+
+
+            <div class="container site-footer__inner">
+                <div class="site-footer__top">
+                    <nav class="site-footer__top-nav">
+                    <a href="/" class="site-footer__top-logo" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-footer-img">
+                    </a>
+                    <div class="site-footer__top-left-nav">
+                        <ul class="site-footer__top-list">
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Номера</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Услуги</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Бар зимовка</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Туры и экскурсии</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Спецпредложение</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Банкетный зал</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__top-center-nav">
+                        <ul class="site-footer__top-list">
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Первопроходцы</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Маршруты</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Фотогалерея</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">О нас</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Контакты</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__top-right-nav">
+                        <ul class="site-footer__top-list">
+                            <li class="site-footer__top-link">г. Мурманск, Ледокольный проезд, 6</li>
+                            <li class="site-footer__top-link">+7 964 680 50-90</li>
+                            <li class="site-footer__top-link">+7 (815) 256-67-20</li>
+                            <li class="site-footer__top-link">booking@expedition-hotel.com</li> 
+                        </ul>
+                    </div>
+                    </nav>                  
+
+                
+                <div class="site-footer__middle">
+                    <div class="site-footer__middle-left">
+                        <div class="site-footer__middle-left-social">
+                            <a 
+                            href="#" 
+                            class="site-footer__middle-left-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в WhatsApp"
+                            >
+                            <img class="site-footer__middle-left-icon-img" src="../icons/WhatsApp2.svg" alt="">
+                            </a>
+
+                            <a 
+                            href="#" 
+                            class="site-footer__middle-left-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Вконтакте"
+                            >
+                            <img class="site-footer__middle-left-icon-img site-footer__middle-left-icon-img--vk" src="../icons/VK.svg" alt="">
+                            </a>
+
+                             <a 
+                            href="#" 
+                            class="site-footer__middle-left-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Telegram"
+                            >
+                            <img class="site-footer__middle-left-icon-img" src="../icons/Telegram2.svg" alt="">
+                            </a>
+                        </div>
+                           
+                        <div class="site-footer__middle-left-questions">
+                            <p class="site-footer__middle-left-title">Остались вопросы?</p>
+                            <p class="site-footer__middle-left-text">Оставьте свои данные<br>и мы свяжемся с вами</p>
+                        </div>
+                           
+                        <div class="site-footer__middle-left-request">
+                            <section class="feedback" aria-label="Форма обратной связи">
+                                <div class="feedback__inner">
+                                    <form class="feedback__form" action="#" method="post">
+                                    <div class="feedback__fields">
+                                        <div class="feedback__field">
+                                        <input
+                                            class="feedback__input"
+                                            id="feedback-name"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Ваше имя"
+                                            autocomplete="name"
+                                        >
+                                        </div>
+
+                                        <div class="feedback__field">
+                                        <input
+                                            class="feedback__input"
+                                            id="feedback-phone"
+                                            name="phone"
+                                            type="tel"
+                                            placeholder="Телефон"
+                                            autocomplete="tel"
+                                        >
+                                        </div>
+                                    </div>
+
+                                    <div class="feedback__submit-block">
+                                        <p class="feedback__policy">
+                                        Нажимая кнопку "Отправить", вы соглашаетесь<br> 
+                                        с Политикой конфиденциальности
+                                        </p>
+
+                                        <button class="feedback__button" type="submit">
+                                        <span class="feedback__button-text">Отправить</span>
+                                        <img
+                                            src="../icons/main/main-switch-btn-right.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="special-offer__link-arrow"
+                                        >
+                                        </button>
+                                    </div>
+                                    </form>
+                                </div>
+                                </section>
+
+                        </div>
+                    </div>
+                    <div class="site-footer__middle-right">
+                        <div class="site-footer__middle-right-map">
+                            <img class="site-footer__map" src="../image/footer-map.png" alt="Местоположение отеля на карте">
+                            <img class="site-footer__map-badge" src="../image/footer-compass.png" alt="" aria-hidden="true">
+                            </div>
+                    </div>
+                </div>
+                <div class="site-footer__down">
+                    <div class="site-footer__down-inner">
+                        <div class="site-footer__down-left">
+                            <p>© 2025, «экспедиция»</p>
+                        </div>
+                        <div class="site-footer__down-center">
+                            <p><a href="#" class="site-footer__down-link">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="site-footer__down-right">
+                            <p><a href="#" class="site-footer__down-link">Request design</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+    </footer>
+
+
+<script>
+  const menu = document.querySelector('[data-burger]');
+  const panel = document.querySelector('.mobile-menu__panel');
+  const openBtn = document.querySelector('[data-burger-open]');
+  const closeEls = document.querySelectorAll('[data-burger-close]');
+
+  let scrollY = 0;
+
+  function preventScroll(e) {
+    if (panel && panel.contains(e.target)) return;
+    e.preventDefault();
+  }
+
+  function openMenu(){
+    scrollY = window.scrollY || 0;
+    menu.hidden = false;
+
+    document.body.classList.add('is-menu-open');
+    document.body.style.top = `-${scrollY}px`;
+
+    document.addEventListener('touchmove', preventScroll, { passive: false });
+  }
+
+  function closeMenu(){
+    menu.hidden = true;
+
+    document.body.classList.remove('is-menu-open');
+    document.removeEventListener('touchmove', preventScroll);
+
+    const y = Math.abs(parseInt(document.body.style.top || '0', 10));
+    document.body.style.top = '';
+    window.scrollTo(0, y);
+  }
+
+  openBtn?.addEventListener('click', openMenu);
+  closeEls.forEach(el => el.addEventListener('click', closeMenu));
+
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && !menu.hidden) closeMenu();
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const forms = document.querySelectorAll('form');
+
+  forms.forEach(form => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      alert('Форма отправлена!');
+    });
+  });
+});
+
+/*------------------------------*/
+document.addEventListener('DOMContentLoaded', () => {
+    const faqButtons = document.querySelectorAll('.faq-item__button');
+
+    faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const currentItem = button.closest('.faq-item');
+            const isOpened = currentItem.classList.contains('faq-item--opened');
+
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('faq-item--opened');
+                const itemButton = item.querySelector('.faq-item__button');
+                itemButton?.setAttribute('aria-expanded', 'false');
+            });
+
+            if (!isOpened) {
+                currentItem.classList.add('faq-item--opened');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+});
+
+</script>  
+    
+</body>
+</html>

@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link  rel="stylesheet" href="../styles/MainStyle.css" />
+</head>
+<body class="page">
+    <img src="../image/bg_texture.webp" alt="" class="page__texture" aria-hidden="true"> 
+
+    
+    <section class="hero">
+
+        <div class="hero__background">
+        <img class="hero__frame-mobile" src="../image/main/mobile/main-mobile-hero-lines.png" alt="" aria-hidden="true">         
+        <img class="hero__bg-mobile" src="../image/main/mobile/main-mobile-hero-background.png" alt="" aria-hidden="true">         
+        <img class="hero__frame" src="../image/hero-frame.png" alt="" aria-hidden="true"> 
+        <img class="hero__bg" src="../image/main/main-hero-img.png" alt="" aria-hidden="true"> 
+        <img class="hero__lines" src="../image/hero-lines.png" alt="" aria-hidden="true"> 
+        </div>
+
+        <div class="hero__content">
+        <header class="container site-header">
+
+            <div class="site-header__mobile" aria-label="Мобильная навигация">
+                <button class="site-header__mobile-btn" type="button" aria-label="Открыть календарь">
+                <img class="site-header__mobile-btn1" src="../icons/Calendar.svg" alt="" aria-hidden="true">
+                </button>
+
+                <a href="#" class="site-header__mobile-logo" aria-label="На главную">
+                <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-header__mobile-logo-img">
+                </a>
+
+                <button class="site-header__mobile-btn" type="button" aria-label="Открыть меню" data-burger-open>
+                <img class="site-header__mobile-btn2" src="../icons/Burger-menu.svg" alt="" aria-hidden="true">
+                </button>
+            </div>
+
+            <div class="mobile-menu" hidden data-burger>
+                <div class="mobile-menu__backdrop" data-burger-close></div>
+
+                <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Меню">
+                    <div class="mobile-menu__top">
+                    <button class="mobile-menu__icon" type="button" aria-label="Календарь">
+                        <img class="mobile-menu__icon1" src="../icons/Calendar.svg" alt="" aria-hidden="true">
+                    </button>
+
+                    <a class="mobile-menu__logo" href="/" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск">
+                    </a>
+
+                    <button class="mobile-menu__icon" type="button" aria-label="Закрыть меню" data-burger-close>
+                        <img class="mobile-menu__icon2"src="../icons/Subtract-mobile.svg" alt="" aria-hidden="true">
+                    </button>
+                    </div>
+
+                    <nav class="mobile-menu__nav" aria-label="Навигация">
+                    <a class="mobile-menu__link mobile-menu__link1" href="#">Номера и цены</a>
+                    <a class="mobile-menu__link mobile-menu__link2" href="#">Услуги</a>
+
+                    <div class="mobile-menu__group">
+                        <a class="mobile-menu__sublink" href="#">Проживание</a>
+                        <a class="mobile-menu__sublink" href="#">Туры и экспедиции</a>
+                        <a class="mobile-menu__sublink" href="#">Отдых и досуг</a>
+                        <a class="mobile-menu__sublink" href="#">Автокемпинг</a>
+                    </div>
+
+                    <a class="mobile-menu__link mobile-menu__link3" href="#">Бар зимовка</a>
+                    <a class="mobile-menu__link mobile-menu__link4" href="#">Банкетный зал</a>
+                    <a class="mobile-menu__link mobile-menu__link5" href="#">О нас</a>
+                    <a class="mobile-menu__link mobile-menu__link6" href="#">Контакты</a>
+                    <a class="mobile-menu__link mobile-menu__link7" href="#">Первопроходцы севера</a>
+                    <a class="mobile-menu__link mobile-menu__link8" href="#">Спецпредложение</a>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="site-header__top">
+                <div class="site-header__top-inner">
+                    <div class="site-header__top-left">
+                        <div class="site-header__top-phone">
+                            <a href="#" class="top-social" aria-label="Написать в WhatsApp" target="_blank" rel="noopener noreferrer">
+                                <img src="../icons/WhatsApp.svg" alt="" aria-hidden="true" class="top-icon">
+                            </a>
+                            <a href="#" class="top-social" aria-label="Написать в Telegram" target="_blank" rel="noopener noreferrer">
+                                <img src="../icons/Telegram.svg" alt="" aria-hidden="true" class="top-icon">
+                            </a>
+                            <a href="tel:+79646805090" class="top-social" aria-label="Позвонить: +7 964 680 50-90">
+                                <span class="top-phone">+7 964 680 50-90</span>
+                            </a>
+                        </div>
+                    
+                        <div class="site-header__top-email">
+                            <a href="mailto:booking@expedition-hotel.com" class="top-email-link" aria-label="Написать на почту booking@expedition-hotel.com">
+                                <span class="top-phone">booking@expedition-hotel.com</span>
+                            </a>
+
+                            
+                        </div>
+                    </div>
+                    <div class="site-header__top-center"> 
+                        <a 
+                            href="#" 
+                            class="site-header__top-center-location"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img class="top-icon" src="../icons/Location.svg" alt="" aria-hidden="true">
+                            <span class="site-header__top-center-text">г. Мурманск, Ледокольный проезд, 6</span>
+                        </a>
+                    </div>
+                    <div class="site-header__top-right">
+                        <div class="site-header__top-language">
+                            <a href="#" class="site-header__top-ru">RU</a>
+                            <a href="#" class="site-header__top-en">EN</a>
+                        </div>
+                        <a href="#" class="site-header__top-book">
+                            <span class="site-header__top-right-text">забронировать номер</span>
+                            <img src="../icons/Arrow.svg" alt="" aria-hidden="true" class="top-icon" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="site-header__nav">
+                <nav class="site-header__menu" aria-label="Main menu">
+                    <ul class="site-header__menu-list site-header__menu-list--left">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">номера и цены</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">банкетный зал</a>
+                        </li>
+                    </ul> 
+
+                    <ul class="site-header__menu-list site-header__menu-list--center1">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">услуги</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">бар зимовка</a>
+                        </li>
+                    </ul> 
+
+                    <a href="#" class="site-header__logo" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-header__logo-img">
+                    </a>
+
+                    <ul class="site-header__menu-list site-header__menu-list--center2">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">о нас</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">контакты</a>
+                        </li>
+                    </ul> 
+
+                    <ul class="site-header__menu-list site-header__menu-list--right">
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">первопроходцы севера</a>
+                        </li>
+                        <li class="site-header__menu-item">
+                            <a href="#" class="site-header__menu-link">спецпредложение</a>
+                        </li>
+                    </ul> 
+                    
+
+                </nav>
+            </div>
+        </header>
+        
+        <div class="hero__body">
+            <div class="hero__decorations">
+                <img class="hero__decorations-icon" src="../icons/main/main-way.svg" alt="" aria-hidden="true">
+                <img class="hero__decorations-icon-mobile" src="../image/main/mobile/main-mobile-hero-way.png" alt="" aria-hidden="true">
+                <p class="hero__decorations-text">
+                Ваш One-Stop Shop на севере.<br> 
+                Отель, туры и арктическая кухня -<br> 
+                Всё, что нужно для путешествия<br> 
+                по кольскому полуострову, берет<br> 
+                начало здесь.</p>
+
+                <p class="hero__decorations-text-mobile">
+                <span class="hero__decorations-text-offset-mobile">Ваш One-Stop Shop на севере. Отель,<br></span>
+                туры и арктическая кухня - Всё,<br> 
+                что нужно для путешествия по кольскому<br> 
+                полуострову, берет начало здесь.</p>
+            </div>  
+            <div class="hero__review">
+                <img class="hero__review-img" src="../icons/main/main-review.png" alt="Рейтинг отеля 9.1/10 по результатам 1309 отзывов">
+            </div>  
+            <div class="hero__title">
+                <p class="hero__title-text">
+                    Открывать.
+                    Восхищаться.
+                    Возвращаться.
+                </p>
+            </div>  
+            <div class="hero__request">
+
+            </div>   
+        </div>
+
+        </div>
+    </section>
+
+    <main>
+        <section class="showcase-card"  aria-labelledby="showcase-card-title-1">
+            <p class="showcase-card__label">об отеле</p>
+
+            <div class="showcase-card__slider" data-showcase-slider>
+                <div class="showcase-card__media">
+                    <div class="showcase-card__image-layer showcase-card__image-layer--next">
+                        <img
+                            src="../image/main/room-preview-background2.png"
+                            alt=""
+                            aria-hidden="true"
+                            class="showcase-card__slide-image"
+                            data-showcase-next-image
+                        >
+                    </div>
+
+                    <div class="showcase-card__image-layer showcase-card__image-layer--current">
+                        <img
+                            src="../image/main/room-preview-background1.png"
+                            alt="Интерьер номера с двумя кроватями"
+                            class="showcase-card__slide-image"
+                            data-showcase-current-image
+                        >
+                    </div>
+                </div>
+
+                <div class="showcase-card__overlay">
+                    <div class="showcase-card__number-wrap">
+                        <div class="showcase-card__number-track" data-showcase-number-track>
+                            <div class="showcase-card__number-slide" data-showcase-number-current data-showcase-number>01</div>
+                            <div class="showcase-card__number-slide" data-showcase-number-next></div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-card__description">
+                        <div class="showcase-card__text-window">
+                            <div class="showcase-card__text-track" data-showcase-text-track>
+                                <div class="showcase-card__text-slide" data-showcase-text-current>
+                                    <p class="showcase-card__caption" data-showcase-caption-current>Отель с характером</p>
+                                    <p class="showcase-card__title" id="showcase-card-title-1" data-showcase-title-current>
+                                        Продумали<br>
+                                        всё до мелочей</p>
+                                    <p class="showcase-card__text" data-showcase-text-current-body>
+                                        Мы позаботились о том, чтобы<br>
+                                        в номере можно было по-настоящему<br>
+                                        отдохнуть. современная удобная<br> 
+                                        мебель, температура +25 и всё под<br> 
+                                        рукой: розетки у кровати, свет,<br>
+                                        продуманная планировка. беспокоится<br> 
+                                        не о чем — только комфорт и тепло.
+                                    </p>
+                                </div>
+
+                                <div class="showcase-card__text-slide showcase-card__text-slide--next" data-showcase-text-next>
+                                    <p class="showcase-card__caption" data-showcase-caption-next></p>
+                                    <p class="showcase-card__title" data-showcase-title-next></p>
+                                    <p class="showcase-card__text" data-showcase-text-next-body></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-card__switch" aria-label="Навигация по карточкам">
+                            <button class="showcase-card__switch-btn showcase-card__switch-btn--prev" type="button" data-showcase-prev>
+                                <span class="showcase-card__switch-text">назад</span>
+                                <img
+                                src="../icons/main/main-arrow-prev.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="showcase-card__switch-arrow showcase-card__switch-arrow--prev"
+                                >
+                            </button>
+
+                            <button class="showcase-card__switch-btn showcase-card__switch-btn--next" type="button" data-showcase-next>
+                                <span class="showcase-card__switch-text">вперед</span>
+                                <img
+                                src="../icons/main/main-arrow-next.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="showcase-card__switch-arrow showcase-card__switch-arrow--next"
+                                >
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-card__inner-mobile">
+                <div class="showcase-card__media-mobile">
+                    <!-- <img src="../image/main/mobile/main-mobile-showcase-card-background-back.png" 
+                    alt="" 
+                    class="showcase-card__image--back-mobile"> -->
+
+                    <img src="../image/main/mobile/main-mobile-showcase-card-background.png" 
+                    alt="Интерьер номера с двумя кроватями" 
+                    class="showcase-card__image-mobile"
+                    data-showcase-current-image-mobile>
+
+                <div class="showcase-card__switch" aria-label="Навигация по карточкам">
+                        <button data-showcase-prev class="showcase-card__switch-btn showcase-card__switch-btn--prev" type="button">
+                                    <span class="showcase-card__switch-text">назад</span>
+                                    <img
+                                    src="../icons/main/main-arrow-prev.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                    class="showcase-card__switch-arrow showcase-card__switch-arrow--prev"
+                                    >
+                        </button>
+
+                        <button data-showcase-next class="showcase-card__switch-btn showcase-card__switch-btn--next" type="button">
+                                    <span class="showcase-card__switch-text">вперед</span>
+                                    <img
+                                    src="../icons/main/main-arrow-next.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                    class="showcase-card__switch-arrow showcase-card__switch-arrow--next"
+                                    >
+                        </button>
+
+                </div>
+                </div>
+
+                <div class="showcase-card__description-mobile">
+                    <p data-showcase-caption-mobile class="showcase-card__caption">Отель с характером</p>
+                    <p data-showcase-title-mobile class="showcase-card__title" id="showcase-card-title-1">
+                            Продумали<br>
+                            всё до мелочей</p>
+                    <p data-showcase-text-mobile class="showcase-card__text">
+                            Мы позаботились о том, чтобы<br>
+                            в номере можно было по-настоящему отдохнуть.<br>
+                            современная удобная мебель, температура<br> 
+                            +25 и всё под рукой: розетки у кровати, свет,<br>
+                            продуманная планировка. беспокоится не о чем — <br> 
+                            только комфорт и тепло.
+                    </p>
+                </div>                  
+                
+            </div>
+        </section>
+
+        <section class="room-preview" data-room-preview>
+
+            <div class="room-preview__inner">
+                <div class="room-preview__info">
+                    <div class="room-preview__switch">
+                         <button data-prev class="room-preview__switch-btn" type="button" aria-label="Предыдущий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-left.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="room-preview__switch-icon"
+                            >
+                        </button>
+
+                        <img 
+                            src="../icons/main/main-switch-btn-line.svg" 
+                            alt="" 
+                            aria-hidden="true"
+                            class="room-preview__switch-line"
+                        >
+
+                        <button data-next class="room-preview__switch-btn" type="button" aria-label="Следующий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-right.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="room-preview__switch-icon"
+                            >
+                        </button>
+
+                    </div>
+
+                    <p class="room-preview__title" data-title>
+                        номер<br>
+                        <span class="room-preview__title-offset">стандарт</span>
+                    </p>
+
+                    <p class="room-preview__text" data-text>
+                        Этот светлый, изысканный и компактный<br>
+                        номер обладает всем необходимым<br>
+                        для полного расслабления после<br>
+                        увлекательно проведённого дня<br>
+                        в Мурманске.
+                    </p>
+
+                    <a href="#" class="room-preview__link">
+                        <span class="room-preview__link-text">Подробнее</span>
+                        
+                        <img
+                            src="../icons/main/main-switch-btn-right.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="room-preview__link-arrow"
+                        >
+                    </a>                   
+                </div>
+
+                <div class="room-preview__media">
+                    <img 
+                    src="../image/main/main-room-preview-frame.png" 
+                    alt="" 
+                    aria-hidden="true"
+                    class="room-preview__frame">
+                     
+                    <div class="room-preview__image-wrapper">
+                        <img 
+                        src="../image/main/main-room-preview1.png" 
+                        alt="Номер стандарт" 
+                        class="room-preview__image"
+                        data-image
+                        >
+
+                        <div class="room-preview__pagination" aria-hidden="true">
+                                <span class="room-preview__pagination-line is-active"></span>
+                                <span class="room-preview__pagination-line"></span>
+                                <span class="room-preview__pagination-line"></span>
+                                <span class="room-preview__pagination-line"></span>
+                                <span class="room-preview__pagination-line"></span>
+                                <span class="room-preview__pagination-line"></span>
+                                <span class="room-preview__pagination-line"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="room-preview__inner-mobile">
+                    <p data-title-mobile class="room-preview__title">
+                        номер<br>
+                        <span class="room-preview__title-offset">стандарт</span>
+                    </p>
+
+                    <p data-text-mobile class="room-preview__text">
+                        Этот светлый, изысканный и компактный номер<br>
+                        обладает всем необходимым для полного расслабления<br>
+                        после увлекательно проведённого дня в Мурманске.
+                    </p>
+                    
+                    <div class="room-preview__switch">
+                         <button data-prev class="room-preview__switch-btn" type="button" aria-label="Предыдущий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-left.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="room-preview__switch-icon"
+                            >
+                        </button>
+
+                        <img 
+                            src="../image/main/mobile/main-room-preview-switch-line.svg" 
+                            alt="" 
+                            aria-hidden="true"
+                            class="room-preview__switch-line"
+                        >
+
+                        <button data-next class="room-preview__switch-btn" type="button" aria-label="Следующий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-right.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="room-preview__switch-icon"
+                            >
+                        </button>
+
+                    </div>
+
+                    <div class="room-preview__media">
+                        <img 
+                        src="../image/main/mobile/main-room-preview-frame.png" 
+                        alt="" 
+                        aria-hidden="true"
+                        class="room-preview__frame">
+                        
+                        <div class="room-preview__image-wrapper">
+                            <img 
+                            src="../image/main/mobile/main-room-preview-image.png" 
+                            alt="Номер стандарт" 
+                            class="room-preview__image"
+                            data-image-mobile>
+
+                            <div class="room-preview__pagination-mobile" aria-hidden="true">
+                                <span class="room-preview__pagination-line-mobile is-active"></span>
+                                <span class="room-preview__pagination-line-mobile"></span>
+                                <span class="room-preview__pagination-line-mobile"></span>
+                                <span class="room-preview__pagination-line-mobile"></span>
+                            </div>
+
+                        </div>
+                    </div>                   
+
+                    <a href="#" class="room-preview__link">
+                        <span class="room-preview__link-text">Подробнее</span>
+                        
+                        <img
+                            src="../icons/main/main-switch-btn-right.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="room-preview__link-arrow"
+                        >
+                    </a>                   
+            </div>
+
+        </section>
+
+        <section class="journey-map">
+            <img
+            src="../image/main/main-journey-map-background.png"
+            alt=""
+            aria-hidden="true"
+            class="journey-map__bg-lines journey-map__bg-lines--desktop"
+            >
+            <img
+            src="../image/main/mobile/main-mobile-journey-map-lines.svg"
+            alt=""
+            aria-hidden="true"
+            class="journey-map__bg-lines journey-map__bg-lines--mobile"
+            >
+
+            <div class="journey-map__inner">
+                <div class="journey-map__info">
+                    <div class="journey-map__title">
+                        Откройте<br>
+                        <span class="journey-map__title-accent">Кольский</span><br>
+                        <span class="journey-map__title-accent">полуостров</span><br>
+                        <span class="journey-map__title-accent-overlap">вместе с нами</span><br>
+                    </div>
+
+                    <div class="journey-map__text journey-map__text--desktop">
+                        <p>
+                            Мы собрали для вас самые интересные<br>
+                            локации Кольского полуострова —<br>
+                            от побережий Баренцева моря<br>
+                            до традиционных саамских деревень.
+                        </p>
+
+                        <p>
+                            Исследуйте маршруты, выбирайте места<br>
+                            для путешествий и вдохновляйтесь<br>
+                            атмосферой севера прямо на карте.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="journey-map__media">
+                    <img
+                    src="../image/main/main-journey-map-image.svg"
+                    alt="Карта Кольского полуострова"
+                    class="journey-map__image journey-map__image--desktop"
+                    >
+                    <img
+                    src="../image/main/mobile/main-mobile-journey-map.svg"
+                    alt="Карта Кольского полуострова"
+                    class="journey-map__image journey-map__image--mobile"
+                    >
+
+                     <div class="journey-map__photos" aria-hidden="true">
+                        <div class="journey-map__zone journey-map__zone--1">
+                        <img class="journey-map__photo journey-map__photo--a" src="../image/main/pictures-map/средний_п-в.png" alt="Средний полуостров - фото">
+                        <img class="journey-map__photo journey-map__photo--b" src="../image/main/pictures-map/рыбачий_п-в.png" alt="Рыбачий полуостров - фото">
+                        </div>
+
+                        <div class="journey-map__zone journey-map__zone--2">
+                        <img class="journey-map__photo journey-map__photo--c" src="../image/main/pictures-map/териберка.png" alt="Териберка - фото">
+                        <img class="journey-map__photo journey-map__photo--d" src="../image/main/pictures-map/экспедиция.png" alt="Экспедиция (Мурманск) - фото">
+                        </div>
+
+                        <div class="journey-map__zone journey-map__zone--3">
+                        <img class="journey-map__photo journey-map__photo--e" src="../image/main/pictures-map/кандалакша.png" alt="Кандалакша - фото">
+                        <img class="journey-map__photo journey-map__photo--f" src="../image/main/pictures-map/ревда.png" alt="Ревда - фото">
+                        <img class="journey-map__photo journey-map__photo--g" src="../image/main/pictures-map/ловозёрово.png" alt="Ловозёрово - фото">
+                        <img class="journey-map__photo journey-map__photo--h" src="../image/main/pictures-map/кировск.png" alt="Кировск - фото">
+                        </div>
+
+                        <div class="journey-map__zone journey-map__zone--4">
+                        <img class="journey-map__photo journey-map__photo--i" src="../image/main/pictures-map/умбра.png" alt="Умбра - фото">
+                        <img class="journey-map__photo journey-map__photo--j" src="../image/main/pictures-map/терский_берег.png" alt="Терский берег - фото">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-map__text journey-map__text--mobile">
+                        <p>
+                            Мы собрали для вас самые интересные локации<br>
+                            Кольского полуострова —<br>
+                            от побережий Баренцева моря<br>
+                            до традиционных саамских деревень.
+                        </p>
+
+                        <p>
+                            Исследуйте маршруты, выбирайте места<br>
+                            для путешествий и вдохновляйтесь атмосферой севера<br>
+                            прямо на карте.
+                        </p>
+                    </div>
+            </div>          
+            
+        </section>
+        
+        <section class="bar-preview" aria-label="Бар Зимовка">
+            <div class="bar-preview__inner">
+                <div class="bar-preview__left">
+                    <div class="bar-preview__heading">
+
+                        <p class="bar-preview__title">
+                            Бар<br>
+                            <span class="bar-preview__title-offset">Зимовка</span>
+                        </p>
+
+                        <p class="bar-preview__subtitle">
+                            океанские сокровища<br>
+                            севера на вашем столе
+                        </p>
+                    </div>
+
+                    <div class="bar-preview__left-media">
+                        <img
+                        src="../image/main/main-bar-preview.png"
+                        alt="Интерьер бара «Зимовка»"
+                        class="bar-preview__left-image bar-preview__left-image--desktop"
+                        >
+
+                        <img
+                        src="../image/main/mobile/main-mobile-bar-preview-first-image.png"
+                        alt="Интерьер бара «Зимовка»"
+                        class="bar-preview__left-image bar-preview__left-image--mobile"
+                        >
+                    </div>
+
+                    <p class="bar-preview__text bar-preview__text--mobile">
+                        Основной гастрономический<br> 
+                        уклон был сделан на локальный северный продукт<br> 
+                        и подчеркнутый стиль авантюризма бесстрашных<br> 
+                        путешественников, которые раз за разом открывают<br> 
+                        для себя новые просторы и уголки планеты.
+                    </p>
+                </div>
+
+                <img
+                    src="../icons/main/main-bar-preview-line.png"
+                    alt=""
+                    aria-hidden="true"
+                    class="bar-preview__divider"
+                >
+
+                <div class="bar-preview__right">
+                    <a href="#" class="bar-preview__link bar-preview__link--desktop">
+                        <span class="bar-preview__link-text">Подробнее</span>
+                        <img
+                            src="../icons/main/main-switch-btn-right.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="bar-preview__link-arrow"
+                        >
+                    </a>
+
+                    <img
+                        src="../image/main/main-bar-preview-dish.png"
+                        alt="Блюдо из меню бара «Зимовка»"
+                        class="bar-preview__dish bar-preview__dish--desktop"
+                    >
+
+                    <img
+                        src="../image/main/mobile/main-mobile-bar-preview-second-image.png"
+                        alt="Блюдо из меню бара «Зимовка»"
+                        class="bar-preview__dish bar-preview__dish--mobile"
+                    >
+
+                    <p class="bar-preview__text bar-preview__text--desktop">
+                        Основной гастрономический<br> 
+                        уклон был сделан на локальный<br> 
+                        северный продукт и подчеркнутый<br> 
+                        стиль авантюризма бесстрашных<br> 
+                        путешественников, которые раз<br> 
+                        за разом открывают для себя<br> 
+                        новые просторы и уголки<br> 
+                        планеты.
+                    </p>
+
+                    <a href="#" class="bar-preview__link bar-preview__link--mobile">
+                        <span class="bar-preview__link-text">Подробнее</span>
+                        <img
+                            src="../icons/main/main-switch-btn-right.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="bar-preview__link-arrow"
+                        >
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offer" data-special-offer>
+             <img
+            src="../image/main/main-special-offer-lines.png"
+            alt=""
+            aria-hidden="true"
+            class="special-offer__bg-lines"
+            >
+
+            <div class="special-offer__inner1">
+                 
+                <div class="special-offer__left special-offer__left-desktop">
+                    <p class="special-offer__number" data-offer-number>01</p>
+                </div>
+
+                <div class="special-offer__center-left">
+                    <p class="special-offer__label">спецпредложения</p>
+
+                    <div class="special-offer__title" data-offer-title>
+                        Полярное<br>
+                        <span class="special-offer__title-offset">Рождество</span>
+                    </div>
+
+                    <div class="special-offer__controls--mobile">
+
+                    <div class="special-offer__left">
+                        <p class="special-offer__number" data-offer-number-mobile>01</p>
+                    </div>
+
+                    <div class="special-offer__switch">
+                         <button  data-offer-prev class="special-offer__switch-btn" type="button" aria-label="Предыдущий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-left.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="special-offer__switch-icon"
+                            >
+                        </button>
+
+                        <img 
+                            src="../image/main/mobile/main-mobile-special-offer-line.svg" 
+                            alt="" 
+                            aria-hidden="true"
+                            class="special-offer__switch-line"
+                        >
+
+                        <button data-offer-next class="room-preview__switch-btn" type="button" aria-label="Следующий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-right.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="special-offer__switch-icon"
+                            >
+                        </button>
+
+                    </div>
+
+                    </div>
+
+                    <p data-offer-text class="special-offer__text special-offer__text--desktop">
+                    Погрузитесь в атмосферу<br>
+                    настоящей арктической сказки.<br>
+                    Праздничные дни в «Экспедиции» —<br>
+                    это уютные вечера с горячим<br>
+                    глинтвейном, ужины в баре<br>
+                    «Зимовка» и выезд в поисках<br>
+                    северного сияния.
+                    </p>
+                </div>
+
+                 <div class="special-offer__center-right">
+                     <img
+                        src="../image/main/main-special-offer__image.png"
+                        alt="Северное сияние и зимний лагерь"
+                        class="special-offer__image"
+                        data-offer-image
+                    >
+
+                     <p data-offer-text-mobile class="special-offer__text special-offer__text--mobile">
+                    Погрузитесь в атмосферу настоящей арктической<br>
+                    сказки.<br>
+                    Праздничные дни в «Экспедиции» — это уютные вечера<br>
+                    с горячим глинтвейном, ужины в баре «Зимовка»<br>
+                    и выезд в поисках северного сияния.<br>
+                    </p>
+
+                    <a href="#" class="special-offer__link">
+                        <span class="special-offer__link-text">Подробнее</span>
+                        <img
+                            src="../icons/main/main-switch-btn-right.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="special-offer__link-arrow"
+                        >
+                    </a>
+                 </div>
+
+                 <div class="special-offer__right">
+                     <div class="special-offer__switch special-offer__switch-desktop">
+                         <button data-offer-prev class="special-offer__switch-btn" type="button" aria-label="Предыдущий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-left.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="special-offer__switch-icon"
+                            >
+                        </button>
+
+                        <img 
+                            src="../icons/main/main-switch-btn-line.svg" 
+                            alt="" 
+                            aria-hidden="true"
+                            class="special-offer__switch-line"
+                        >
+
+                        <button data-offer-next class="special-offer__switch-btn" type="button" aria-label="Следующий номер">
+                            <img 
+                                src="../icons/main/main-switch-btn-right.svg" 
+                                alt="" 
+                                aria-hidden="true"
+                                class="special-offer__switch-icon"
+                            >
+                        </button>
+
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="booking-hero" aria-label="Форма поиска номера">
+            <img
+                src="../image/hero-frame.png"
+                alt=""
+                aria-hidden="true"
+                class="booking-hero__frame booking-hero__frame--desktop"
+            >
+
+            <img
+                src="../image/main/main-booking-hero-bg.png"
+                alt=""
+                aria-hidden="true"
+                class="booking-hero__bg booking-hero__bg--desktop"
+            >
+
+            <img 
+            class="booking-hero__lines booking-hero__lines--desktop" 
+            src="../image/main/main-booking-hero-lines.png" 
+            alt="" 
+            aria-hidden="true"
+            >     
+            
+            <img class="booking-hero__frame booking-hero__frame--mobile" src="../image/main/mobile/main-mobile-booking-hero-frame2.svg" alt="" aria-hidden="true">         
+            <img class="booking-hero__bg booking-hero__bg--mobile" src="../image/main/mobile/main-mobile-booking-hero-background2.png" alt="" aria-hidden="true">  
+            <div class="booking-hero__content">
+                <div class="booking-hero__top">
+                    <img
+                        src="../image/main/main-booking-path.png"
+                        alt=""
+                        aria-hidden="true"
+                        class="booking-hero__path booking-hero__path--desktop"
+                    >
+
+                    <img class="booking-hero__path booking-hero__path--mobile" src="../image/main/mobile/main-mobile-booking-hero-path.svg" alt="" aria-hidden="true">
+                     
+                    <p class="booking-hero__pin-text">
+                        г. мурманск,<br>
+                        ледокольный проезд, 6
+                    </p>
+                </div>
+
+                <div class="booking-hero__middle">
+                    <p class="booking-hero__title booking-hero__title--desktop">
+                        у нас все готово<br>
+                        <span class="booking-hero__title-offset1">для старта вашей<br></span>
+                        <span class="booking-hero__title-offset2">экспедиции</span>
+                    </p>
+                    <p class="booking-hero__title booking-hero__title--mobile">
+                        у нас все<br>
+                        готово для<br>
+                        старта вашей<br>
+                        экспедиции
+                    </p>
+                </div>
+
+                 <div class="booking-hero__bottom"></div>
+            </div>            
+        </section>
+    
+    </main>
+
+    
+    <footer class="site-footer">
+            <div class="site-footer-mobile">
+                    <a href="#" class="site-footer__top-logo" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-footer-img">
+                    </a>
+
+                    <div class="site-footer-mobile-social">
+                            <a 
+                            href="#" 
+                            class="site-footer-mobile-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в WhatsApp"
+                            >
+                            <img class="site-footer-mobile-icon-img" src="../icons/WhatsApp2.svg" alt="">
+                            </a>
+
+                            <a 
+                            href="#" 
+                            class="site-footer-mobile-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Вконтакте"
+                            >
+                            <img class="site-footer-mobile-icon-img site-footer-mobile-icon-img--vk" src="../icons/VK.svg" alt="">
+                            </a>
+
+                             <a 
+                            href="#" 
+                            class="site-footer-mobile-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Telegram"
+                            >
+                            <img class="site-footer-mobile-icon-img" src="../icons/Telegram2.svg" alt="">
+                            </a>
+                    </div>
+
+                    <ul class="site-footer__top-list site-footer-mobile-list1">
+                            <li class="site-footer__top-link">г. Мурманск, Ледокольный проезд, 6</li>
+                            <li class="site-footer__top-link">+7 964 680 50-90</li>
+                            <li class="site-footer__top-link">+7 (815) 256-67-20</li>
+                            <li class="site-footer__top-link">booking@expedition-hotel.com</li> 
+                    </ul>
+
+                    <nav class="site-footer-mobile-nav">
+                            <ul class="site-footer__top-list site-footer__top-list2">
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Номера</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Услуги</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Бар зимовка</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Туры и экскурсии</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Спецпредложение</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Банкетный зал</a></li>
+                            </ul>
+
+                            <ul class="site-footer__top-list site-footer__top-list3">
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Первопроходцы</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Маршруты</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Фотогалерея</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">О нас</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Контакты</a></li>
+                                <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">FAQ</a></li>
+                            </ul>
+                    </nav>
+                    
+                    
+                    <div class="site-footer-mobile-map">
+                            <img class="site-footer__map" src="../image//footer-mobile-map.png" alt="Местоположение отеля на карте">
+                    </div>
+
+                    <div class="site-footer__middle-left-questions site-footer-mobile-questions">
+                            <p class="site-footer__middle-left-title site-footer-mobile-title">Остались вопросы?</p>
+                            <p class="site-footer__middle-left-text site-footer-mobile-text">Оставьте свои данные<br>и мы свяжемся с вами</p>
+                    </div>
+
+                    <div class="site-footer-mobile-request">
+                        <section class="feedback-mobile" aria-label="Форма обратной связи">
+                            <form class="feedback-mobile__form" action="#" method="post">
+                            <div class="feedback-mobile__field">
+                                <input
+                                class="feedback-mobile__input"
+                                id="feedback-name-mobile"
+                                name="name"
+                                type="text"
+                                placeholder="Ваше имя"
+                                autocomplete="name"
+                                >
+                            </div>
+
+                            <div class="feedback-mobile__field">
+                                <input
+                                class="feedback-mobile__input"
+                                id="feedback-phone-mobile"
+                                name="phone"
+                                type="tel"
+                                placeholder="Телефон"
+                                autocomplete="tel"
+                                >
+                            </div>
+
+                            <p class="feedback-mobile__policy">
+                                Нажимая кнопку "Отправить", вы соглашаетесь с Политикой конфиденциальности
+                            </p>
+
+                            <button class="feedback-mobile__button" type="submit">
+                                <span class="feedback-mobile__button-text">Отправить</span>
+                                <img
+                                src="../icons/main/main-switch-btn-right.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="feedback-mobile__button-arrow"
+                                >
+                            </button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div class="site-footer__down">
+                        <div class="site-footer__down-left">
+                            <p>© 2025, «экспедиция»</p>
+                        </div>
+                        <div class="site-footer__down-center">
+                            <p><a href="#" class="site-footer__down-link">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="site-footer__down-right">
+                            <p><a href="#" class="site-footer__down-link">Request design</a></p>
+                        </div>
+
+                                   
+                              
+                </div>
+                </div>
+            </div>
+
+
+            <div class="container site-footer__inner">
+                <div class="site-footer__top">
+                    <nav class="site-footer__top-nav">
+                    <a href="/" class="site-footer__top-logo" aria-label="На главную">
+                        <img src="../image/mainLogo.png" alt="Экспедиция — парк-отель Мурманск" class="site-footer-img">
+                    </a>
+                    <div class="site-footer__top-left-nav">
+                        <ul class="site-footer__top-list">
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Номера</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Услуги</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Бар зимовка</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Туры и экскурсии</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Спецпредложение</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Банкетный зал</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__top-center-nav">
+                        <ul class="site-footer__top-list">
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Первопроходцы</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Маршруты</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Фотогалерея</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">О нас</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">Контакты</a></li>
+                            <li class="site-footer__top-item"><a href="#" class="site-footer__top-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__top-right-nav">
+                        <ul class="site-footer__top-list">
+                            <li class="site-footer__top-link">г. Мурманск, Ледокольный проезд, 6</li>
+                            <li class="site-footer__top-link">+7 964 680 50-90</li>
+                            <li class="site-footer__top-link">+7 (815) 256-67-20</li>
+                            <li class="site-footer__top-link">booking@expedition-hotel.com</li> 
+                        </ul>
+                    </div>
+                    </nav>                  
+
+                
+                <div class="site-footer__middle">
+                    <div class="site-footer__middle-left">
+                        <div class="site-footer__middle-left-social">
+                            <a 
+                            href="#" 
+                            class="site-footer__middle-left-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в WhatsApp"
+                            >
+                            <img class="site-footer__middle-left-icon-img" src="../icons/WhatsApp2.svg" alt="">
+                            </a>
+
+                            <a 
+                            href="#" 
+                            class="site-footer__middle-left-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Вконтакте"
+                            >
+                            <img class="site-footer__middle-left-icon-img site-footer__middle-left-icon-img--vk" src="../icons/VK.svg" alt="">
+                            </a>
+
+                             <a 
+                            href="#" 
+                            class="site-footer__middle-left-icon"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Написать в Telegram"
+                            >
+                            <img class="site-footer__middle-left-icon-img" src="../icons/Telegram2.svg" alt="">
+                            </a>
+                        </div>
+                           
+                        <div class="site-footer__middle-left-questions">
+                            <p class="site-footer__middle-left-title">Остались вопросы?</p>
+                            <p class="site-footer__middle-left-text">Оставьте свои данные<br>и мы свяжемся с вами</p>
+                        </div>
+                           
+                        <div class="site-footer__middle-left-request">
+                            <section class="feedback" aria-label="Форма обратной связи">
+                                <div class="feedback__inner">
+                                    <form class="feedback__form" action="#" method="post">
+                                    <div class="feedback__fields">
+                                        <div class="feedback__field">
+                                        <input
+                                            class="feedback__input"
+                                            id="feedback-name"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Ваше имя"
+                                            autocomplete="name"
+                                        >
+                                        </div>
+
+                                        <div class="feedback__field">
+                                        <input
+                                            class="feedback__input"
+                                            id="feedback-phone"
+                                            name="phone"
+                                            type="tel"
+                                            placeholder="Телефон"
+                                            autocomplete="tel"
+                                        >
+                                        </div>
+                                    </div>
+
+                                    <div class="feedback__submit-block">
+                                        <p class="feedback__policy">
+                                        Нажимая кнопку "Отправить", вы соглашаетесь<br> 
+                                        с Политикой конфиденциальности
+                                        </p>
+
+                                        <button class="feedback__button" type="submit">
+                                        <span class="feedback__button-text">Отправить</span>
+                                        <img
+                                            src="../icons/main/main-switch-btn-right.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="special-offer__link-arrow"
+                                        >
+                                        </button>
+                                    </div>
+                                    </form>
+                                </div>
+                                </section>
+
+                        </div>
+                    </div>
+                    <div class="site-footer__middle-right">
+                        <div class="site-footer__middle-right-map">
+                            <img class="site-footer__map" src="../image/footer-map.png" alt="Местоположение отеля на карте">
+                            <img class="site-footer__map-badge" src="../image/footer-compass.png" alt="" aria-hidden="true">
+                            </div>
+                    </div>
+                </div>
+                <div class="site-footer__down">
+                    <div class="site-footer__down-inner">
+                        <div class="site-footer__down-left">
+                            <p>© 2025, «экспедиция»</p>
+                        </div>
+                        <div class="site-footer__down-center">
+                            <p><a href="#" class="site-footer__down-link">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="site-footer__down-right">
+                            <p><a href="#" class="site-footer__down-link">Request design</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+    </footer>
+
+
+<script src="../js/main.js"></script>
+    
+</body>
+</html>

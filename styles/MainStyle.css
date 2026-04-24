@@ -167,6 +167,7 @@ input[type="number"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     z-index: 2;
     pointer-events: none;
 }
@@ -1747,6 +1748,290 @@ main {
     margin-top: 14rem;
     padding-left: 3rem;
 }
+
+.hero.cook .hero__decorations-text {
+    width: 38rem;
+    padding-right: 3rem;
+}
+
+.hero.cook  .hero__body {
+    min-height: 70rem;
+    justify-content: space-between;
+}
+
+.hero.cook .hero__title {
+    width: 100%;
+    margin-top: 26.9rem;
+}
+.hero.cook .hero__title-text {
+    text-align: right;
+    width: 68rem;
+    line-height: 8rem;
+}
+
+.cookAbout {
+    width: 184rem;
+    margin: 0 auto 6rem;
+    display: flex;
+    position: relative;
+}
+
+.cookAbout .left {
+    width: 72rem;
+    padding-top: 1.4rem;
+}
+
+.cookAbout .left svg {
+    width: 15.2rem;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    bottom: 6.4rem;
+    left: 60.6rem;
+}
+
+.callOfNord {
+    width: 184rem;
+    margin: 0 auto 6rem;
+    display: flex;
+}
+
+.callOfNord .left {
+    width: 73rem;
+}
+
+.callOfNord .left img {
+    width: 50rem;
+    height: auto;
+    margin-top: 16rem;
+}
+
+.double-col {
+    width: 184rem;
+    margin: 0 auto 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-col .left {
+    width: 71.7rem;
+}
+
+.double-col .right {
+    width: 88rem;
+}
+
+.article-text {
+    font-size: 2rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    font-family: 'X-TYPEWRITER', Courier, monospace;
+}
+
+.article-text p {
+    margin-bottom: 2.4rem;
+}
+
+.mb-33 {
+    margin-bottom: 33rem;
+}
+
+.quote-block-text {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+.w-461 {
+    width: 46.1rem;
+}
+
+.quote-block-name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: right;
+}
+
+.quote-block img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4.5rem;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.img-with-desc img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2.7rem;
+}
+
+.img-with-desc .desc {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #F1E2D280;
+}
+
+.mb-194 {
+    margin-bottom: 19.4rem;
+}
+
+.w-690 {
+    width: 69rem;
+}
+
+.w-577 {
+    width: 57.7rem;
+}
+
+.mb-120 {
+    margin-bottom: 12rem !important;
+}
+
+.article-text p:last-child {
+    margin-bottom: 0;
+}
+
+.content-title {
+    font-size: 7rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 8rem;
+    text-align: center;
+    font-family: 'Kintsugi', 'Circe', sans-serif;
+    padding-right: 30rem;
+}
+
+.content-title .red {
+    text-align: right;
+}
+
+.cookAbout .right svg {
+    width: 65rem;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    right: 2rem;
+    top: -1.5rem;
+}
+
+.callOfNord-title {
+    font-size: 7rem;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    font-family: 'Kintsugi', 'Circe', sans-serif;
+    margin-bottom: 6.8rem;
+}
+
+.callOfNord .right {
+    width: 110rem;
+}
+
+.callOfNord .right img {
+    width: 99.1rem;
+    height: auto;
+    margin-bottom: 3.2rem;
+}
+
+.callOfNord-rightText {
+    padding-left: 23rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: 'X-TYPEWRITER', Courier, monospace;
+    width: 67rem;
+}
+
+.callOfNord-leftText {
+    width: 50rem;
+    margin-bottom: 5.6rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: 'X-TYPEWRITER', Courier, monospace;
+}
+
+.callOfNord-cookText {
+    width: 46rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.8rem;
+}
+
+.callOfNord-cookName {
+    width: 46rem;
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+}
+
+.red {
+    color: #DE4300;
+}
+
+.cookAbout .right {
+    width: 51rem;
+    padding-left: 4rem;
+    padding-bottom: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.cookInfo {
+    width: 59rem;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'X-TYPEWRITER', Courier, monospace;
+}
+
+.cookText {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+}
+
+.cookInfo p {
+    margin-bottom: 1.6rem;
+}
+
+.cookInfo p:last-child {
+    margin-bottom: 0;
+}
+
+.cookAbout .imgWrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.cookAbout .imgWrapper img {
+    width: 52.2rem;
+    height: auto;
+}
+
 .booking-hero__title{
   margin: 0;  
   
@@ -2485,6 +2770,12 @@ main {
   line-height: 1;
   letter-spacing: -0.04em;
 }
+.page__texture.cook.mob {
+    display: none;
+}
+      .page__texture.cook.desk {
+          display: block;
+      }
 .special-offer__title{
   margin-top: 4rem;
   font-size: 2.4rem;
@@ -3032,6 +3323,196 @@ body.is-menu-open{
   overflow-y: auto;        
   -webkit-overflow-scrolling: touch;
 }
+
+.hero.cook .hero__decorations-text-mobile {
+    padding-left: 4rem;
+}
+
+      .hero.cook .hero__title {
+          margin-top: 0;
+      }
+      .hero.cook .hero__title-text {
+          width: 21rem;
+          line-height: 4rem;
+          text-align: left;
+      }
+
+      .hero.cook .hero__request {
+          display: none;
+      }
+
+      .hero.cook {
+          min-height: 110vh;
+      }
+
+      .cookAbout {
+          width: 100%;
+          flex-direction: column;
+          padding-top: 6rem;
+          margin-top: 1.2rem;
+          overflow: hidden;
+          margin-bottom: 8rem;
+      }
+
+      .cookAbout .left {
+          width: 34.3rem;
+          padding-top: 0;
+          position: relative;
+          margin:0 auto 4rem;
+      }
+
+      .cookInfo {
+          width: 100%;
+          font-size: 1.2rem;
+          padding-right: 2.2rem;
+          box-sizing: border-box;
+      }
+
+      .cookAbout .left svg {
+          width: 8.4rem;
+          left: unset;
+          right: -1.1rem;
+          bottom: -6.4rem;
+      }
+
+      .cookAbout .imgWrapper img {
+          width: 100%;
+      }
+
+      .cookAbout .right svg {
+          width: 100%;
+          right: -3.1rem;
+          top: 0;
+      }
+
+      .cookAbout .imgWrapper {
+          width: 34.3rem;
+          margin: 0 auto 1rem;
+      }
+
+      .cookAbout .right {
+          width: 34.3rem;
+          margin: 0 auto;
+          padding: 0;
+      }
+
+      .cookText {
+          font-size: 1.2rem;
+      }
+
+      .callOfNord {
+          width: 34.3rem;
+          flex-direction: column;
+          margin-bottom: 8rem;
+      }
+
+      .callOfNord-title {
+          font-size: 2.4rem;
+          margin-bottom: 4rem;
+      }
+
+      .callOfNord .left {
+          width: 100%;
+      }
+
+      .callOfNord-leftText {
+          width: 100%;
+          font-size: 1.2rem;
+          margin-bottom: 4rem;
+      }
+
+      .callOfNord-cookText {
+          width: 100%;
+          font-size: 1.2rem;
+          font-family: 'X-TYPEWRITER', Courier, monospace;
+          text-transform: uppercase;
+          letter-spacing: -0.02em;
+          line-height: 1.1;
+      }
+      .callOfNord-cookText br {
+          display: none;
+      }
+      .callOfNord-cookName {
+          width: 100%;
+          font-size: 1.2rem;
+      }
+
+      .callOfNord .left img {
+          width: 100%;
+          margin-top: 1.2rem;
+      }
+      .callOfNord .right {
+          width: 100%;
+          margin-top: 4rem;
+      }
+      .callOfNord .right img {
+          width: 100%;
+          margin-bottom: 4rem;
+      }
+      .callOfNord-rightText {
+          padding-left: 0;
+          width: 100%;
+          font-size: 1.2rem;
+      }
+      .double-col {
+          width: 34.3rem;
+          margin-bottom: 8rem;
+          flex-direction: column;
+          justify-content: flex-start;
+      }
+      .double-col .left {
+          width: 100%;
+      }
+      .article-text {
+          font-size: 1.2rem;
+      }
+      .article-text.mb-33 {
+          margin-bottom: 4rem;
+      }
+      .quote-block.w-461 {
+          width: 100%;
+      }
+      .quote-block img {
+          margin-bottom: 0.6rem;
+      }
+      .quote-block-text {
+          font-size: 1.2rem;
+      }
+      .quote-block-name {
+          font-size: 1.2rem;
+      }
+      .double-col .right {
+          width: 100%;
+          margin-top: 4rem;
+      }
+      .img-with-desc img {
+          margin-bottom: 0.4rem;
+      }
+      .img-with-desc .desc {
+          font-size: 1.2rem;
+      }
+      .img-with-desc.mb-194 {
+          margin-bottom: 4rem;
+      }
+      .article-text.w-690 {
+          width: 100%;
+      }
+      .content-title {
+          padding-right: 0;
+          font-size: 2.4rem;
+          margin: 0 auto 4rem;
+          width: 34.3rem;
+          text-align: left;
+      }
+      .article-text.w-577 {
+          width: 100%;
+      }
+      .page__texture.cook.mob {
+          display: block;
+      }
+      .page__texture.cook.desk {
+          display: none;
+      }
 }
 
 

@@ -1215,6 +1215,196 @@ main {
   z-index: 1;
 }
 
+.hero.cook .hero__title-text.offers {
+    width: 170rem;
+    box-sizing: border-box;
+    padding-left: 5rem;
+    text-align: left;
+    padding-top: 10.4rem;
+}
+
+.offers-section {
+    width: 184rem;
+    margin: 0 auto 16rem;
+}
+
+.offers-section-grid {
+    width: 100%;
+    display: flex;
+    gap: 4.1rem;
+    flex-wrap: wrap;
+}
+
+.offer-modal-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bounded', 'Circe', sans-serif;
+}
+
+.offer-modal-info .right {
+    width: 85rem;
+}
+.offer-modal-info .right img {
+    width: 100%;
+    height: auto;
+    max-height: 60rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.offer-modal-subtitle {
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 0.04rem;
+}
+
+.offer-modal-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.02rem;
+    text-transform: uppercase;
+    font-family: 'X-TYPEWRITER', Courier, monospace;
+    padding-left: 2.6rem;
+    margin-bottom: 3.6rem;
+}
+
+.offer-modal-info .feedback__button {
+    width: 27rem;
+}
+
+.offer-modal-label {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    letter-spacing: 0.04rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #E9D8C53D;
+    margin-bottom: 1.2rem;
+}
+
+.offer-modal-list li {
+    position: relative;
+    color: #837C74;
+}
+
+.offer-modal-price {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.white {
+    color: #fff;
+}
+
+.offer-modal-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -2.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #DE4300;
+    border-radius: 0.4rem;
+    top: calc(50% - 0.4rem)
+}
+
+.offer-modal-info .left {
+    width: 73rem;
+}
+
+.offer-modal-desc {
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: 0.04rem;
+    margin-bottom: 3.6rem;
+}
+
+.offers-section-item {
+    display: block;
+    width: 58.6rem;
+    height: 58.6rem;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.offer-modal {
+    display: none;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 8rem;
+    background-color: #161616;
+}
+
+.offer-modal-title {
+    font-size: 4rem;
+    line-height: 1;
+    padding: 0 8rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.offer-modal-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-section-item:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+.offers-section-item-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.offers-section-item-text {
+    position: absolute;
+    z-index: 2;
+    bottom: 2.4rem;
+    width: 32rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 1;
+    left: 13.4rem;
+    text-align: center;
+}
+
+.offers-section-item.big .offers-section-item-text {
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 5rem;
+}
+
+.hero.cook .hero__title-text.offers div:last-child {
+    text-align: right;
+}
+
 .journey-map__inner {
   position: relative;
   z-index: 2;
@@ -2101,6 +2291,11 @@ main {
   display: none;
 }
 
+@media (min-width: 768px) {
+    .offers-section-item.big-desk {
+        width: 89.95rem;
+    }
+}
 
 /* Adaptive */
 
@@ -2115,6 +2310,9 @@ main {
     .container {
         padding: 0;
     }
+      .offers-section-item.big-mob {
+          width: 100%;
+      }
     .hero{
         position: relative;
     }
@@ -3512,6 +3710,87 @@ body.is-menu-open{
       }
       .page__texture.cook.desk {
           display: none;
+      }
+
+      .hero.cook .hero__title-text.offers {
+          width: 100%;
+          padding-left: 0;
+      }
+
+      .hero.cook .hero__title-text.offers div:first-child {
+          position: relative;
+          left: -1.2rem;
+      }
+
+      .hero.cook .hero__title-text.offers div:last-child {
+          text-align: center;
+      }
+
+      .offers-section {
+          width: 34.3rem;
+          margin-top: 7rem;
+      }
+
+      .offers-section-grid {
+          gap: 1.2rem;
+      }
+
+      .offers-section-item {
+          width: 16.5rem;
+          height: 20rem;
+      }
+
+      .offers-section-grid .offers-section-item .offers-section-item-text {
+          left: 0;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 1.6rem;
+          font-size: 1.4rem;
+          bottom: 0.8rem;
+      }
+      .offer-modal {
+          padding: 6rem 1.6rem 3rem;
+      }
+      .offer-modal-title {
+          padding: 0;
+          font-size: 2rem;
+          margin-bottom: 4rem;
+          font-weight: bold;
+      }
+      .offer-modal-info {
+          flex-direction: column;
+      }
+      .offer-modal-info .left {
+          width: 100%;
+      }
+      .offer-modal-desc {
+          font-size: 1.4rem;
+          margin-bottom: 4rem;
+      }
+      .offer-modal-subtitle {
+          margin-bottom: 3.2rem;
+          font-size: 1.6rem;
+      }
+      .offer-modal-list {
+          font-size: 1.2rem;
+          gap: 1.6rem;
+      }
+      .offer-modal-label {
+          font-size: 1.2rem;
+      }
+      .offer-modal-price {
+          font-size: 1.6rem;
+      }
+      .offer-modal-info .feedback__button {
+          padding: 2rem;
+          width: 25rem;
+      }
+      .offer-modal-info .right {
+          width: 100%;
+          margin-top: 4rem;
+      }
+      .offer-modal-info .right img {
+          max-height: 30rem;
       }
 }
 

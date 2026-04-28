@@ -1405,6 +1405,261 @@ main {
     text-align: right;
 }
 
+.hero.cook .hero__title-text.bh {
+    margin-left: 4rem;
+    padding-top: 13rem;
+}
+
+.hero.cook .hero__title-text.bh div:last-child {
+
+}
+
+.bh-menu {
+    width: 184rem;
+    display: flex;
+    margin: 0 auto 24rem;
+}
+
+.organization-and-booking {
+    width: 184rem;
+    display: flex;
+    margin: 0 auto 24rem;
+    justify-content: space-between;
+}
+
+.photo-gallery {
+    width: 184rem;
+    margin: 0 auto 24rem;
+}
+
+.photo-gallery-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.photo-gallery-nav .room-preview__switch {
+    margin-top: 0;
+}
+
+.organization-and-booking .right {
+    width: 72.6rem;
+    flex-shrink: 0;
+}
+
+.photo-gallery-slider img {
+    width: 33.6rem;
+    height: 43rem;
+}
+
+.room-preview__switch-btn.swiper-button-disabled {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.organization-and-booking .left {
+    flex-grow: 1;
+}
+
+.organization-and-booking .left-block {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4rem;
+}
+
+.organization-and-booking .left-block-text {
+    width: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.organization-and-booking .left-block-img {
+    padding-top: 13.6rem;
+}
+
+.organization-and-booking .left-block-img img {
+    width: 56.5rem;
+    height: 47.6rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.organization-and-booking .feedback__button {
+    width: 25rem;
+}
+
+.img-bg-grid {
+    background: url("../image/grid.png");
+    background-size: 72.5rem 89.9rem;
+    width: 100%;
+    height: 90rem;
+    padding: 3.8rem;
+    box-sizing: border-box;
+}
+
+.img-bg-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.atmosphere-of-discovery {
+    width: 184rem;
+    display: flex;
+    margin: 0 auto 24rem;
+    justify-content: space-between;
+}
+
+.atmosphere-of-discovery .right {
+    width: 49.2rem;
+}
+
+.atmosphere-of-discovery .left {
+    width: 122.4rem;
+}
+
+.atmosphere-of-discovery .left-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13rem;
+}
+
+.atmosphere-of-discovery .left-block img {
+    width: 69rem;
+    height: 55rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.atmosphere-of-discovery .left-block .article-text {
+    width: 41rem;
+}
+
+.atmosphere-of-discovery .right img {
+    width: 49.2rem;
+    height: 82rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bh-menu .left {
+    padding-right: 7.9rem;
+}
+
+.bh-menu .right {
+    padding-left: 8rem;
+    flex-grow: 1;
+}
+
+.bh-menu .site-header__top-book {
+    text-transform: uppercase;
+    gap: 17rem;
+    padding-bottom: 2.2rem;
+}
+
+.bh-menu .right-top {
+    display: flex;
+    height: 14rem;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+}
+
+.bh-menu-header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+    width: 126.1rem;
+    justify-content: space-between;
+}
+
+.bh-menu-img-main {
+    width: 126.1rem;
+    height: 70rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bh-menu-img-adv {
+    width: 100%;
+    height: 47.4rem;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 7rem;
+}
+
+.bh-menu-text {
+    font-size: 1.6rem;
+    letter-spacing: -0.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    padding-bottom: 2.2rem;
+}
+
+.gray-line {
+    width: 0.1rem;
+    height: 91rem;
+    border-right: 0.1rem dashed #E9D8C53D;
+}
+
+.bh-menu-title {
+    width: 74rem;
+    font-size: 7rem;
+    letter-spacing: -0.01rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Kintsugi', 'Circe', sans-serif;
+    padding-left: 1rem;
+}
+
+.photo-gallery-title {
+    font-size: 7rem;
+    letter-spacing: -0.01rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Kintsugi', 'Circe', sans-serif;
+    padding-left: 1rem;
+}
+
+.oab-title {
+    width: 100%;
+    padding-top: 4rem;
+    font-size: 7rem;
+    letter-spacing: -0.01rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Kintsugi', 'Circe', sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 7rem;
+}
+
+.oab-title div:last-child {
+    text-align: right;
+}
+
+.aod-title {
+    width: 87rem;
+    font-size: 7rem;
+    letter-spacing: -0.01rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Kintsugi', 'Circe', sans-serif;
+    padding-left: 1rem;
+}
+
+.aod-title div:last-child {
+    text-align: right;
+}
+
+.bh-menu-title div:last-child {
+    text-align: right;
+}
+
 .journey-map__inner {
   position: relative;
   z-index: 2;
@@ -3791,6 +4046,168 @@ body.is-menu-open{
       }
       .offer-modal-info .right img {
           max-height: 30rem;
+      }
+
+      .hero.cook.bh .hero__body {
+        justify-content: flex-end;
+      }
+      .hero.cook.bh .hero__title-text.bh div:last-child {
+          text-align: right;
+      }
+
+      .bh-menu {
+          margin-top: 6rem;
+          display: block;
+          width: 34.3rem;
+          margin-bottom: 12rem;
+      }
+
+      .bh-menu .left {
+          padding-right: 0;
+      }
+
+      .bh-menu-header {
+          width: 100%;
+          display: block;
+          margin-bottom: 4rem;
+      }
+
+      .bh-menu-title {
+          width: 25rem;
+          font-size: 2.4rem;
+          margin-bottom: 4rem;
+      }
+
+      .bh-menu-text {
+          padding-bottom: 0;
+          font-size: 1.4rem;
+      }
+
+      .bh-menu-img-main {
+          width: 100%;
+          height: 40rem;
+      }
+      .gray-line {
+          height: 0.1rem;
+          width: 100%;
+          border-right: 0;
+          border-bottom: 0.1rem dashed #E9D8C53D;
+          margin: 4rem 0;
+      }
+
+      .bh-menu .right {
+          padding-left: 0;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .bh-menu .right-top {
+          height: auto;
+          margin-bottom: 0;
+          order: 3;
+          margin-top: 4rem;
+      }
+
+      .bh-menu-img-adv {
+          height: 20rem;
+          margin-bottom: 4rem;
+      }
+
+      .atmosphere-of-discovery {
+          width: 34.3rem;
+          margin-bottom: 12rem;
+          flex-direction: column;
+      }
+
+      .atmosphere-of-discovery .left {
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+      }
+
+      .atmosphere-of-discovery .left-block {
+          flex-direction: column;
+          justify-content: flex-start;
+          margin-bottom: 4rem;
+      }
+
+      .atmosphere-of-discovery .left-block img {
+          width: 100%;
+          height: 40rem;
+          margin-bottom: 4rem;
+      }
+
+      .atmosphere-of-discovery .left-block .article-text {
+          width: 100%;
+      }
+
+      .aod-title {
+          width: 30rem;
+          font-size: 2.4rem;
+          margin-bottom: 4rem;
+      }
+
+      .atmosphere-of-discovery .right {
+          width: 100%;
+      }
+
+      .atmosphere-of-discovery .right img {
+          width: 100%;
+          height: 30rem;
+      }
+
+      .organization-and-booking {
+          width: 34.3rem;
+          display: block;
+          position: relative;
+          margin-bottom: 12rem;
+      }
+
+      .oab-title {
+          font-size: 2.4rem;
+          margin-bottom: 4rem;
+          padding: 0;
+      }
+
+      .oab-title div:last-child {
+          font-size: 2rem;
+      }
+
+      .organization-and-booking .left-block {
+          flex-direction: column;
+          justify-content: flex-start;
+          padding-right: 0;
+      }
+
+      .organization-and-booking .left-block-text {
+          width: 100%;
+      }
+
+      .organization-and-booking .left-block-img {
+          display: none;
+      }
+
+      .organization-and-booking .right {
+          margin-top: 4rem;
+          width: 100%;
+          padding-bottom: 8rem;
+      }
+
+      .img-bg-grid {
+          height: 38rem;
+          background-size: 34.2rem 37.9rem;
+          padding: 2.3rem;
+      }
+
+      .organization-and-booking .feedback__button {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          padding: 1.6rem;
+      }
+
+      .photo-gallery {
+          display: none;
       }
 }
 

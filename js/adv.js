@@ -7,6 +7,14 @@ $(document).ready(() => {
         },
         slidesPerView: 5
     });
+    const aboutSlider = new Swiper('.about-slider', {
+        navigation: {
+            nextEl: '.about-next',
+            prevEl: '.about-prev',
+        },
+        loop: true,
+        slidesPerView: 2
+    });
     const menuSlider1 = new Swiper('.menu-slider-1', {
         navigation: {
             nextEl: '.ms1-next',
